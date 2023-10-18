@@ -2,6 +2,7 @@ package com.nick.datastructures;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -10,11 +11,17 @@ public class Main {
         // Fixed size - arrays
         int[] scores = {0,150,500}; // Delete nor Add elements - Impossible!
 
+
+        
         // ArrayList
         ArrayList<Integer> scoreList = new ArrayList(); // NOT-recommended // Initialsize 10
+        List<Integer> myScoreList = new LinkedList<>();
 
-        // List + ArratList
+        // List + ArrayList
         List<Integer> scoreList2 = new ArrayList(20);     // Recommended // Initialsize 20
+
+
+
 
         scoreList2.add(100); //Add new index with, element: 100
         scoreList2.add(200);
